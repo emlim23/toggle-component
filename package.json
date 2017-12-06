@@ -4,10 +4,11 @@
   "description": "Simple toggle button inspired by egghead.io advanced react component patters",
   "main": "build/index.js",
   "scripts": {
-    "build": "babel lib -d build",
+    "build": "NODE_ENV=development babel lib -d build",
+    "build:watch": "NODE_ENV=development babel lib -w -d build",
     "lint": "eslint lib/**; exit 0",
     "lint:watch": "esw -w lib/**",
-    "prepublish": "npm run build",
+    "prepublish": "NODE_ENV=development npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -28,8 +29,10 @@
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
     "babel-eslint": "^8.0.3",
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-react": "^6.24.1",
+    "babel-preset-react-app": "^3.1.0",
     "eslint": "^4.12.1",
     "eslint-plugin-import": "^2.8.0",
     "eslint-plugin-jsx-a11y": "^6.0.2",
