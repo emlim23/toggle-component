@@ -3,6 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
+exports.Toggle = undefined;
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
@@ -103,12 +104,9 @@ var Toggle = function (_Component) {
   return Toggle;
 }(_react.Component);
 
-// export {Toggle}
-
-
 Toggle.defaultProps = { onToggle: function onToggle() {} };
 Toggle.On = ToggleOn;
 Toggle.Off = ToggleOff;
 Toggle.Button = ToggleButton;
 Toggle.childContextTypes = _defineProperty({}, TOGGLE_CONTEXT, _propTypes2.default.object.isRequired);
-exports.default = Toggle;
+exports.Toggle = Toggle;
