@@ -4,12 +4,8 @@
   "description": "Simple toggle button inspired by egghead.io advanced react component patters",
   "main": "build/index.js",
   "scripts": {
-    "build": "NODE_ENV=development babel lib -d build",
-    "build:watch": "NODE_ENV=development babel lib -w -d build",
-    "lint": "eslint lib/**; exit 0",
-    "lint:watch": "esw -w lib/**",
-    "prepublish": "NODE_ENV=development npm run build",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "clean-dist": "rm -rf ./dist",
+    "build": "yarn run clean-dist && NODE_ENV=production `yarn bin`/babel ./lib --out-dir ./dist"
   },
   "repository": {
     "type": "git",
@@ -42,5 +38,14 @@
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "styled-components": "^2.2.4"
+  },
+  "peerDependencies": {
+    "prop-types": "^15.x",
+    "react": "^16.x",
+    "react-dom": "^16.x",
+    "styled-components": "^2.x"
+  },
+  "devDependencies": {
+    "babel-preset-stage-1": "^6.24.1"
   }
 }
