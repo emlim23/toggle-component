@@ -1,6 +1,6 @@
 {
   "name": "toggle-component",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Simple toggle button inspired by egghead.io advanced react component patters",
   "main": "build/index.js",
   "scripts": {
