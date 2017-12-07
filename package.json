@@ -1,9 +1,12 @@
 {
   "name": "toggle-component",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Simple toggle button inspired by egghead.io advanced react component patters",
   "main": "build/index.js",
-  "author": "Efren Lim Jr. <emlim23ster@gmail.com>",
+  "author": {
+    "name": "Efren Lim",
+    "email": "emlim23ster@gmail.com"
+  },
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/emlim23/toggle-component/issues"
@@ -27,10 +30,6 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack --watch",
     "build": "webpack"
-  },
-  "author": {
-    "name": "Efren Lim",
-    "email": "emlim23ster@gmail.com"
   },
   "devDependencies": {
     "babel-cli": "^6.24.1",
