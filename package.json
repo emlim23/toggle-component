@@ -1,8 +1,14 @@
 {
-  "name": "react-flex-eml",
+  "name": "toggle-component",
   "version": "1.0.5",
-  "description": "Trial flexbox implementation in React",
+  "description": "Simple toggle button inspired by egghead.io advanced react component patters",
   "main": "build/index.js",
+  "author": "Efren Lim Jr. <emlim23ster@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/emlim23/toggle-component/issues"
+  },
+  "homepage": "https://github.com/emlim23/toggle-component#readme",
   "peerDependencies": {
     "prop-types": "^15.x",
     "react": "^16.x",
