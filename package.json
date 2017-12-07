@@ -1,6 +1,6 @@
 {
   "name": "react-flex-eml",
-  "version": "0.0.5",
+  "version": "1.0.4",
   "description": "Trial flexbox implementation in React",
   "main": "build/index.js",
   "peerDependencies": {
