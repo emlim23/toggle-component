@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
-import Switch from './elements/Switch.js';
+import Switch from './element/Switch.js';
 
 const TOGGLE_CONTEXT = '__toggle__';
 
@@ -28,7 +28,7 @@ ToggleButton.contextTypes = {
   [TOGGLE_CONTEXT]: PropTypes.object.isRequired
 }
 
-class Toggle extends Component{
+class Toggle extends React.Component {
   static defaultProps = { onToggle: () => {}}
   static On = ToggleOn;
   static Off = ToggleOff;
